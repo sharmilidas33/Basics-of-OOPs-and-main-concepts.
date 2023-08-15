@@ -33,7 +33,7 @@ class Student{
         this.name= newName;
     }
 }
-public class main{  
+public class Main{  
     public static void main (String[] args) {
         Student obj1= new Student(78,90,"Titli"); //dynamically allocates memory & returns a referebce variable to it.
         //Class is a template of an object, object is the instance of a class.
