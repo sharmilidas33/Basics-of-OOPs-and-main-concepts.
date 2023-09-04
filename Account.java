@@ -9,7 +9,7 @@ public class Account {
     }
 
     void withdraw(int amount){
-        if(balance>=amount){
+        if(balance<=amount){
             balance= balance- amount;
             System.out.println("Withdrawal successful! New Balance ="+balance);
         }
