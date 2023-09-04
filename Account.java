@@ -9,12 +9,12 @@ public class Account {
     }
 
     void withdraw(int amount){
-        if(balance<=amount){
-            balance= balance- amount;
-            System.out.println("Withdrawal successful! New Balance ="+balance);
+        if(amount>balance){
+            System.out.println("Insufficient funds!");
         }
         else{
-            System.out.println("Insufficient funds!");
+            balance= balance- amount;
+            System.out.println("Withdrawal successful! New Balance ="+balance);
         }
     }
     void checkBalance(){
